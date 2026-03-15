@@ -1,11 +1,81 @@
 const PREP_DATA = {
   "self_introductions": {
     "sixty_seconds": "Thank you. I'm Lamont Lu. I've spent the last six years building change management infrastructure from zero — and most recently, deploying GenAI solutions for real businesses.\n\nAt CINNOX, I founded the Project Delivery Committee, integrating six cross-functional teams and 90 people across Taipei and Hong Kong. Through stakeholder alignment, process redesign, and structured training, we achieved 250 percent release efficiency improvement and cut customer response time from two weeks to under 24 hours.\n\nAfter that, I founded AirAI, leading end-to-end AI deployment — from pain point identification through adoption and outcome measurement — including an AI customer service system that cut response time by 50 percent.\n\nWhat excites me about this role is that TSMC is scaling AI across manufacturing, and that requires someone who can drive adoption across domain experts. That's the challenge I've built my career around.",
+    "ninety_seconds": "Hi, thank you for the opportunity. My name is Lamont Lu. I have a background in software engineering management, cross-functional leadership, and organizational transformation.\n\nOver the past several years, I've taken leadership roles in cross-functional and cross-site teams. At CINNOX, I founded the Project Delivery Committee, integrating six teams and 90 people across Taipei and Hong Kong. I was responsible not only for project execution, but also for aligning different functions when priorities, timelines, or requirements changed — achieving 250 percent release efficiency improvement along the way.\n\nMost recently, I founded AirAI, where I led end-to-end AI deployment — from pain point identification through adoption and outcome measurement — across customer service, logistics, and finance.\n\nWhat especially interests me about this role is that AI transformation is not only about deploying technology. It also requires aligning people, processes, and expectations across the organization. I believe my experience in driving execution, managing change, and helping teams adopt new ways of working makes me well-suited for this position.\n\nI'm looking for an opportunity where I can combine my management background, transformation experience, and AI deployment expertise in a larger and more impactful environment — and that's why I'm very interested in TSMC and this role.",
     "two_minutes": "Thank you. I'm Lamont Lu. Over 15 years, my career has moved from hands-on engineering to leading organizational transformation — and I believe that arc maps directly to what this AI Change Management role demands.\n\nI started at HTC as a senior software engineer, shipping Android system code to millions of devices worldwide — which gave me a deep respect for engineering rigor and quality at scale.\n\nBut I gradually realized that individual technical contribution has its limits. Real impact at scale requires aligning diverse teams toward shared goals. That insight drove my transition into engineering leadership and program management.\n\nAt Cheetah Mobile, I managed cross-site engineering teams between Beijing and Taipei, navigating cultural differences and delivering under extreme timelines — including a product launch completed in just one month with a 13-person team.\n\nThe most transformative chapter was my six years at CINNOX. I founded and led the Project Delivery Committee — essentially building the organization's change management infrastructure from zero. I integrated six teams and 90-plus people across two offices, designed standardized delivery processes, ran cross-functional workshops, and trained new managers. The results were concrete: 250 percent release efficiency improvement, customer response time reduced from two weeks to 24 hours, and VoIP latency cut from 6 seconds to 1.8 seconds. One defining moment was rebuilding our core communication product in three months — replacing a system the original team had spent three years developing — by ruthlessly prioritizing what mattered most.\n\nMost recently, I founded AirAI, where I led the full AI deployment lifecycle across multiple industries — customer service, logistics, and finance. From identifying pain points to designing GenAI solutions, driving user adoption, and measuring outcomes. This gave me firsthand understanding of what it really takes to make AI work in organizations — not just the technology, but the people and process side.\n\nMy background is in software and SaaS rather than semiconductor. But change management is fundamentally about people and processes — understanding resistance, building trust, proving value through results. Those challenges are universal. And I've consistently shown I can ramp up fast — at CINNOX, I went from zero telecom knowledge to rebuilding the core VoIP product in three months.\n\nI'm ready to bring that discipline — building from zero, driving adoption, delivering measurable outcomes — to TSMC's AI transformation.",
+    "quick_intro": "Sure. I'm Lamont Lu. My background is in software engineering management, project delivery, and cross-functional leadership. At CINNOX, I led teams across different functions and locations, building change management infrastructure from scratch and achieving 250 percent efficiency improvement. Most recently at AirAI, I deployed GenAI solutions for real businesses. I'm especially interested in this role because AI change management combines technology deployment, business alignment, and people adoption — which matches my experience very well.",
+    "natural_delivery": "Hi, thank you for meeting with me today. I'm Lamont Lu. My background is in software engineering management, project delivery, and cross-functional leadership. In my previous roles, I've worked a lot on aligning teams, managing change, and driving execution when priorities shift. At CINNOX I built the delivery organization from zero, and at AirAI I deployed AI solutions for real businesses. What interests me about this role is that AI change management is not only about technology — it's about helping people and organizations adopt change successfully. I feel that combination fits my experience very well, and that's why I'm excited about this opportunity.",
     "company_hooks": {
       "tsmc": "What draws me to this role is that TSMC is leading the next wave of AI integration across manufacturing — from defect detection to predictive maintenance — and scaling that across thousands of domain experts requires someone who can drive adoption systematically. That's exactly the challenge I've built my career around."
     }
   },
+  "interview_qa": [
+    {
+      "id": "why-role",
+      "question": "Why are you interested in this role?",
+      "answer": "I'm interested in this role because it sits at the intersection of AI, transformation, and organizational change — which is where I believe I can add the most value.\n\nFrom my experience at CINNOX, where I founded the Project Delivery Committee and drove adoption across six cross-functional teams, I learned that introducing new systems or processes is never just a technical challenge. The real difficulty is aligning stakeholders, managing expectations, and building sustainable adoption. That is essentially change management.\n\nAt AirAI, I led end-to-end AI deployment — from identifying pain points to driving user adoption and measuring outcomes. That experience showed me how critical the people and process side is for AI to actually deliver value.\n\nTSMC is scaling AI across manufacturing, and I believe this role requires someone who understands both the technology landscape and the human side of transformation. That combination is exactly what I bring."
+    },
+    {
+      "id": "why-tsmc",
+      "question": "Why TSMC?",
+      "answer": "TSMC is a world-class company with exceptionally high standards in execution, scale, and impact. In such a large and complex organization, change management becomes even more critical — you need structured approaches to drive adoption across thousands of domain experts.\n\nI'm looking for an environment where I can contribute at scale, and TSMC offers exactly that. I also believe this role would allow me to apply my experience in cross-functional leadership and organizational transformation while growing in AI-related change management within a semiconductor context."
+    },
+    {
+      "id": "change-mgmt",
+      "question": "Tell me about your change management experience.",
+      "answer": "Change management has been central to my work, even when the title wasn't explicitly 'change management.'\n\nThe clearest example is at CINNOX, where I founded the Project Delivery Committee from scratch. The company had no unified delivery process — each team operated independently, causing missed deadlines and inconsistent quality. I designed the organizational structure, ran cross-functional workshops to build consensus, established standardized processes, and trained new managers. Rather than mandating change top-down, I built buy-in by demonstrating early results with a pilot team first.\n\nThe outcomes were measurable: release efficiency improved by 250 percent, the organization scaled from 45 to 90 people, and customer response time dropped from two weeks to under 24 hours.\n\nFrom that experience, I believe successful change management requires three things: first, making people understand why the change is needed; second, aligning key stakeholders and building support through demonstrated value; and third, embedding new processes into daily workflows so the change becomes sustainable."
+    },
+    {
+      "id": "stakeholder",
+      "question": "How do you manage stakeholder alignment?",
+      "answer": "My approach starts with clarifying the shared objective — misalignment usually happens when different stakeholders optimize for different goals.\n\nAt CINNOX, I worked with C-level leadership when we had five-plus parallel initiatives competing for limited resources. I built a prioritization framework that scored each initiative on business impact and technical feasibility, then facilitated cross-departmental meetings to ensure every stakeholder understood the priorities.\n\nThe key is communicating in terms each group cares about. Some stakeholders focus on business impact, others on timeline risk, others on operational workload. I also believe in making trade-offs explicit — when people understand what is changing, why, and what the expected impact will be, alignment becomes much easier.\n\nIt's less about persuading with authority and more about creating clarity and trust."
+    },
+    {
+      "id": "ai-adoption",
+      "question": "How would you drive AI adoption in an organization?",
+      "answer": "I believe AI adoption should start with business value and user needs, not the technology itself.\n\nAt AirAI, I followed exactly this approach. For a fitness chain client overwhelmed by customer service volume, I first identified the highest-impact use case — automating repetitive queries through a GenAI-powered system on LINE. I defined success metrics with the client, then deployed a manageable pilot.\n\nBut the technology was only half the challenge. I conducted hands-on training with staff, created documentation, and built a feedback loop for continuous improvement. The result was a 50 percent reduction in response time, and the client expanded the solution to additional locations.\n\nIn my view, sustainable AI adoption depends on three things: choosing the right use case, proving value through early wins, and investing in training and reinforcement so people understand not just how to use the solution, but why it matters."
+    },
+    {
+      "id": "strengths",
+      "question": "What are your strengths?",
+      "answer": "I'd highlight three strengths.\n\nFirst, stakeholder alignment. At CINNOX, I brought six cross-functional teams and 90 people across two offices to align on unified processes — I'm comfortable navigating competing priorities and building consensus.\n\nSecond, execution under complexity. I've managed five-plus parallel initiatives, rebuilt a core product in three months that replaced a three-year legacy system, and consistently delivered measurable results under tight timelines.\n\nThird, people and change leadership. I understand that transformation only works when people are aligned, engaged, and clear about the direction. That's why I naturally focus on both execution and adoption — getting results while making sure the changes stick."
+    },
+    {
+      "id": "why-new",
+      "question": "Why are you considering a new opportunity?",
+      "answer": "I'm looking for an opportunity where I can bring together my experience in management, cross-functional execution, and organizational change in a more impactful environment.\n\nThrough founding AirAI and my years at CINNOX, I've become increasingly focused on transformation — especially where technology adoption and organizational readiness need to move together. This role is attractive because it's not only about managing projects, but about helping a world-class organization successfully adopt AI-driven change. That's the direction I'm genuinely motivated to pursue."
+    },
+    {
+      "id": "background",
+      "question": "Could you briefly describe your background?",
+      "answer": "My career started in software engineering at HTC, shipping Android system code to millions of devices. Over time, I moved into management and program leadership — at Cheetah Mobile managing cross-site teams between Beijing and Taipei, then at CINNOX where I spent six years building delivery infrastructure and leading organizational transformation. Most recently, I founded AirAI, deploying GenAI solutions across customer service, logistics, and finance.\n\nThat progression from engineering to cross-functional leadership to AI deployment is one of the reasons I feel this role is a strong fit."
+    }
+  ],
+  "questions_to_ask": [
+    "Could you share how this role fits into TSMC's broader AI transformation efforts?",
+    "What would be the key priorities for this role in the first six months?",
+    "Who are the main stakeholders this role would work with most closely?",
+    "How is success measured for this position?",
+    "Could you share a bit more about the team structure and where this role sits in the organization?"
+  ],
+  "interview_tips": [
+    {
+      "title": "Opening Line",
+      "content": "When the call starts: \"Hi Jean, thank you for arranging the interview. It's very nice to meet you.\" Then smile, pause, and wait."
+    },
+    {
+      "title": "Keep It Clear and Simple",
+      "content": "Short sentences. Calm pace. No rushing.\n\nGood: \"I'm good at aligning stakeholders and driving execution across teams.\"\nBad: \"My competencies predominantly lie in orchestrating multi-stakeholder transformation initiatives...\""
+    },
+    {
+      "title": "Structure Your Answers",
+      "content": "For any question: state your point, give one specific example, end with how it connects to this role."
+    },
+    {
+      "title": "Likely Opening Questions",
+      "content": "Be ready for these:\n- Could you briefly introduce yourself?\n- Why are you interested in this role?\n- Why TSMC?\n- What experience do you have in change management?\n- How do you work with stakeholders across functions?\n- What interests you about AI transformation?"
+    }
+  ],
   "behavioral_questions": [
     {
       "id": 1,

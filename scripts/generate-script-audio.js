@@ -77,10 +77,32 @@ async function main() {
   // Self-intro scripts
   await generateAudio(apiKey, intros.sixty_seconds, path.join(AUDIO_DIR, 'intro-60s.mp3'));
   await delay(1000);
+  if (intros.ninety_seconds) {
+    await generateAudio(apiKey, intros.ninety_seconds, path.join(AUDIO_DIR, 'intro-90s.mp3'));
+    await delay(1000);
+  }
   await generateAudio(apiKey, intros.two_minutes, path.join(AUDIO_DIR, 'intro-2min.mp3'));
   await delay(1000);
+  if (intros.quick_intro) {
+    await generateAudio(apiKey, intros.quick_intro, path.join(AUDIO_DIR, 'intro-quick.mp3'));
+    await delay(1000);
+  }
+  if (intros.natural_delivery) {
+    await generateAudio(apiKey, intros.natural_delivery, path.join(AUDIO_DIR, 'intro-natural.mp3'));
+    await delay(1000);
+  }
   await generateAudio(apiKey, intros.company_hooks.tsmc, path.join(AUDIO_DIR, 'intro-tsmc-hook.mp3'));
   await delay(1000);
+
+  // Interview Q&A answers
+  if (prepData.interview_qa) {
+    console.log('\nGenerating interview Q&A audio...');
+    console.log('---');
+    for (const item of prepData.interview_qa) {
+      await generateAudio(apiKey, item.answer, path.join(AUDIO_DIR, 'qa-' + item.id + '.mp3'));
+      await delay(1000);
+    }
+  }
 
   // Behavioral answers
   console.log('\nGenerating behavioral answer audio...');

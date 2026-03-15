@@ -390,6 +390,74 @@ h3 { font-size: 1.1rem; margin: 1rem 0 .5rem; color: #d1d5db; }
 }
 .back-link:hover { text-decoration: underline; }
 
+/* ===== Q&A Cards ===== */
+.qa-card {
+  background: #1a1d27;
+  border: 1px solid #2d3148;
+  border-radius: 8px;
+  margin: .5rem 0;
+  overflow: hidden;
+}
+.qa-question {
+  padding: 1rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f3f4f6;
+  cursor: pointer;
+  transition: background .2s;
+  user-select: none;
+}
+.qa-question:hover { background: #1e2433; }
+.qa-arrow { color: #60a5fa; font-size: .8rem; display: inline-block; transition: transform .2s; }
+.expandable.show + .qa-arrow,
+.qa-card:has(.expandable.show) .qa-arrow { transform: rotate(90deg); }
+.qa-answer-text {
+  background: #111318;
+  padding: 1rem 1.2rem;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  color: #d1d5db;
+  font-size: .92rem;
+}
+
+/* ===== Questions List ===== */
+.qa-list { margin: .5rem 0; }
+.qa-item {
+  background: #1a1d27;
+  border: 1px solid #2d3148;
+  border-radius: 8px;
+  padding: .8rem 1.2rem;
+  margin: .4rem 0;
+  color: #d1d5db;
+  font-size: .95rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .3rem;
+}
+
+/* ===== Tip Cards ===== */
+.tip-card {
+  background: #1a1d27;
+  border: 1px solid #2d3148;
+  border-left: 3px solid #60a5fa;
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  margin: .5rem 0;
+}
+.tip-title {
+  font-weight: 600;
+  color: #60a5fa;
+  margin-bottom: .4rem;
+  font-size: .95rem;
+}
+.tip-content {
+  color: #d1d5db;
+  font-size: .9rem;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
   .section { padding: 1rem; }
