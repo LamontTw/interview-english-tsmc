@@ -49,6 +49,21 @@ const PREP_DATA = {
       "id": "background",
       "question": "Could you briefly describe your background?",
       "answer": "My career started in software engineering at HTC, shipping Android system code to millions of devices. Over time, I moved into management and program leadership — at Cheetah Mobile managing cross-site teams between Beijing and Taipei, then at CINNOX where I spent six years building delivery infrastructure and leading organizational transformation. Most recently, I founded AirAI, deploying GenAI solutions across customer service, logistics, and finance.\n\nThat progression from engineering to cross-functional leadership to AI deployment is one of the reasons I feel this role is a strong fit."
+    },
+    {
+      "id": "ai-resistance",
+      "question": "How do you handle resistance when implementing AI tools?",
+      "answer": "I identify key influencers in the team and involve them early. By piloting the tool with them, I gain their buy-in and share small wins with the broader group. This builds trust and gradually reduces resistance as they see the benefits firsthand."
+    },
+    {
+      "id": "ai-measure-success",
+      "question": "How do you measure if an AI-driven change is successful?",
+      "answer": "I establish clear KPIs from the start — like adoption rates or efficiency gains. I track progress, gather feedback, and adjust. If the new process is both adopted and delivers value, I consider it a success."
+    },
+    {
+      "id": "ai-scale-teams",
+      "question": "How do you scale AI-driven changes across large teams?",
+      "answer": "When scaling AI-driven changes across large teams, I start with smaller pilot groups to show measurable success. Once proven, I share these results with other departments, offering clear resources and support. By progressively expanding, maintaining open communication, and demonstrating practical benefits, we ensure successful adoption even at large scale."
     }
   ],
   "questions_to_ask": [

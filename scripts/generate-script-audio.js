@@ -30,7 +30,8 @@ function loadDataFile(filePath, varName) {
   return ctx[varName];
 }
 
-async function generateAudio(apiKey, text, destPath) {
+async function generateAudio(apiKey, text, destPath, voice) {
+  voice = voice || 'onyx';
   if (fs.existsSync(destPath)) {
     console.log(path.basename(destPath) + ' → skipped (exists)');
     return;
@@ -44,7 +45,7 @@ async function generateAudio(apiKey, text, destPath) {
     },
     body: JSON.stringify({
       model: 'tts-1-hd',
-      voice: 'onyx',
+      voice: voice,
       input: text,
       speed: 0.9,
       response_format: 'mp3'
@@ -94,13 +95,17 @@ async function main() {
   await generateAudio(apiKey, intros.company_hooks.tsmc, path.join(AUDIO_DIR, 'intro-tsmc-hook.mp3'));
   await delay(1000);
 
-  // Interview Q&A answers
+  // Interview Q&A answers (onyx default + extra voices)
+  var QA_VOICES = ['onyx', 'echo', 'nova'];
   if (prepData.interview_qa) {
-    console.log('\nGenerating interview Q&A audio...');
-    console.log('---');
-    for (const item of prepData.interview_qa) {
-      await generateAudio(apiKey, item.answer, path.join(AUDIO_DIR, 'qa-' + item.id + '.mp3'));
-      await delay(1000);
+    for (const voice of QA_VOICES) {
+      console.log('\nGenerating interview Q&A audio (' + voice + ')...');
+      console.log('---');
+      for (const item of prepData.interview_qa) {
+        var suffix = voice === 'onyx' ? '' : '-' + voice;
+        await generateAudio(apiKey, item.answer, path.join(AUDIO_DIR, 'qa-' + item.id + suffix + '.mp3'), voice);
+        await delay(1000);
+      }
     }
   }
 

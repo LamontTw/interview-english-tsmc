@@ -221,7 +221,9 @@ function renderIntro() {
     html += '<div class="qa-answer-text">' + esc(item.answer) + '</div>';
     html += '<div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.75rem">';
     html += '<button class="btn btn-sm" onclick="copyText(QA_PREFIX + ' + JSON.stringify(item.question) + ' + \'\\n\\nMy answer:\\n\' + PREP_DATA.interview_qa[' + qa.indexOf(item) + '].answer, this)">Copy for Feedback</button>';
-    html += '<button class="btn btn-sm" onclick="playScript(\'qa-' + item.id + '.mp3\', this)">Listen (Loop)</button>';
+    html += '<button class="btn btn-sm" onclick="playScript(\'qa-' + item.id + '.mp3\', this)">Onyx</button>';
+    html += '<button class="btn btn-sm" onclick="playScript(\'qa-' + item.id + '-echo.mp3\', this)">Echo</button>';
+    html += '<button class="btn btn-sm" onclick="playScript(\'qa-' + item.id + '-nova.mp3\', this)">Nova</button>';
     html += '</div>';
     html += '</div>';
     html += '</div>';

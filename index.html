@@ -13,6 +13,7 @@
     <button data-section="intro" onclick="showSection('intro')">Self-Intro</button>
     <button data-section="behavioral" onclick="showSection('behavioral')">Behavioral</button>
     <button data-section="youtube" onclick="showSection('youtube')">YouTube</button>
+    <button data-section="strengths" onclick="showSection('strengths')">優缺點 Q&amp;A</button>
     <button data-section="glossary" onclick="showSection('glossary')">Glossary</button>
     <button data-section="flashcards" onclick="showSection('flashcards')">Flashcards</button>
   </nav>
@@ -27,6 +28,7 @@
   <div id="intro" class="section"></div>
   <div id="behavioral" class="section"></div>
   <div id="youtube" class="section"></div>
+  <div id="strengths" class="section"></div>
   <div id="glossary" class="section"></div>
   <div id="flashcards" class="section"></div>
 
@@ -44,6 +46,7 @@
   <script src="js/intro.js"></script>
   <script src="js/behavioral.js"></script>
   <script src="js/youtube.js"></script>
+  <script src="js/strengths.js"></script>
   <script src="js/glossary.js"></script>
   <script src="js/flashcard.js"></script>
 
@@ -54,6 +57,7 @@
     renderIntro();
     renderBehavioral();
     renderYoutube();
+    renderStrengths();
     renderGlossary();
     initFlashcards();
   </script>
