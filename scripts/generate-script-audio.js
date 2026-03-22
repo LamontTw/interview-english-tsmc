@@ -72,14 +72,14 @@ async function main() {
   const prepData = loadDataFile(path.join(DATA_DIR, 'prep.js'), 'PREP_DATA');
   const intros = prepData.self_introductions;
 
-  console.log('Generating self-intro audio (onyx / male / tts-1-hd)...');
+  console.log('Generating self-intro audio (tts-1-hd)...');
   console.log('---');
 
-  // Self-intro scripts
-  await generateAudio(apiKey, intros.sixty_seconds, path.join(AUDIO_DIR, 'intro-60s.mp3'));
+  // Self-intro scripts — 60s & 90s use nova (female), others use onyx (male)
+  await generateAudio(apiKey, intros.sixty_seconds, path.join(AUDIO_DIR, 'intro-60s.mp3'), 'nova');
   await delay(1000);
   if (intros.ninety_seconds) {
-    await generateAudio(apiKey, intros.ninety_seconds, path.join(AUDIO_DIR, 'intro-90s.mp3'));
+    await generateAudio(apiKey, intros.ninety_seconds, path.join(AUDIO_DIR, 'intro-90s.mp3'), 'nova');
     await delay(1000);
   }
   await generateAudio(apiKey, intros.two_minutes, path.join(AUDIO_DIR, 'intro-2min.mp3'));
@@ -106,6 +106,16 @@ async function main() {
         await generateAudio(apiKey, item.answer, path.join(AUDIO_DIR, 'qa-' + item.id + suffix + '.mp3'), voice);
         await delay(1000);
       }
+    }
+  }
+
+  // Intro Q&A English answers (nova only)
+  if (prepData.intro_qa) {
+    console.log('\nGenerating intro Q&A audio (nova / female / tts-1-hd)...');
+    console.log('---');
+    for (const item of prepData.intro_qa) {
+      await generateAudio(apiKey, item.answer_en, path.join(AUDIO_DIR, 'introqa-' + item.id + '.mp3'), 'nova');
+      await delay(1000);
     }
   }
 

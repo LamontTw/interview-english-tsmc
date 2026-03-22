@@ -158,7 +158,13 @@ function renderIntro() {
   html += '<h2 style="color:#60a5fa;border-bottom:1px solid #2d3148;padding-bottom:.5rem">Self-Introduction Scripts</h2>';
 
   // 60-second version
-  html += '<h3>60-Second Version <span style="color:#6b7280;font-size:.85rem;font-weight:400">— Punchy, metric-heavy</span></h3>';
+  html += '<h3>60-Second Version <span style="color:#6b7280;font-size:.85rem;font-weight:400">— 變革管理 + AI 導入核心</span></h3>';
+  html += '<h4 style="color:#9ca3af;margin:.5rem 0 .25rem">中文口語版</h4>';
+  html += '<div class="script-block">' + esc(data.sixty_seconds_zh) + '</div>';
+  html += '<div style="display:flex;gap:.5rem;flex-wrap:wrap">';
+  html += '<button class="btn" onclick="copyText(PREP_DATA.self_introductions.sixty_seconds_zh, this)">Copy 中文</button>';
+  html += '</div>';
+  html += '<h4 style="color:#9ca3af;margin:.75rem 0 .25rem">English Spoken Version</h4>';
   html += '<div class="script-block">' + esc(data.sixty_seconds) + '</div>';
   html += '<div style="display:flex;gap:.5rem;flex-wrap:wrap">';
   html += '<button class="btn" onclick="copyText(INTRO_PREFIX + PREP_DATA.self_introductions.sixty_seconds, this)">Copy Script</button>';
@@ -166,7 +172,13 @@ function renderIntro() {
   html += '</div>';
 
   // 90-second version
-  html += '<h3>90-Second Version <span style="color:#6b7280;font-size:.85rem;font-weight:400">— Leadership framing + metrics</span></h3>';
+  html += '<h3>90-Second Version <span style="color:#6b7280;font-size:.85rem;font-weight:400">— 完整職涯敘事 + 變革心得</span></h3>';
+  html += '<h4 style="color:#9ca3af;margin:.5rem 0 .25rem">中文口語版</h4>';
+  html += '<div class="script-block">' + esc(data.ninety_seconds_zh) + '</div>';
+  html += '<div style="display:flex;gap:.5rem;flex-wrap:wrap">';
+  html += '<button class="btn" onclick="copyText(PREP_DATA.self_introductions.ninety_seconds_zh, this)">Copy 中文</button>';
+  html += '</div>';
+  html += '<h4 style="color:#9ca3af;margin:.75rem 0 .25rem">English Spoken Version</h4>';
   html += '<div class="script-block">' + esc(data.ninety_seconds) + '</div>';
   html += '<div style="display:flex;gap:.5rem;flex-wrap:wrap">';
   html += '<button class="btn" onclick="copyText(INTRO_PREFIX + PREP_DATA.self_introductions.ninety_seconds, this)">Copy Script</button>';

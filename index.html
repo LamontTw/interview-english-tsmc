@@ -3,63 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TSMC AI Change Management – Interview English</title>
+  <title>Sprint Cheat Sheet – TSMC AI Change Management</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <button class="active" data-section="home" onclick="showSection('home')">Home</button>
-    <button data-section="lessons" onclick="showSection('lessons')">Lessons</button>
-    <button data-section="intro" onclick="showSection('intro')">Self-Intro</button>
-    <button data-section="behavioral" onclick="showSection('behavioral')">Behavioral</button>
-    <button data-section="youtube" onclick="showSection('youtube')">YouTube</button>
-    <button data-section="strengths" onclick="showSection('strengths')">優缺點 Q&amp;A</button>
-    <button data-section="glossary" onclick="showSection('glossary')">Glossary</button>
-    <button data-section="flashcards" onclick="showSection('flashcards')">Flashcards</button>
-  </nav>
-
-  <div id="home" class="section active"></div>
-
-  <div id="lessons" class="section">
-    <div id="lessonList"></div>
-    <div id="lessonDetail" style="display:none"></div>
-  </div>
-
-  <div id="intro" class="section"></div>
-  <div id="behavioral" class="section"></div>
-  <div id="youtube" class="section"></div>
-  <div id="strengths" class="section"></div>
-  <div id="glossary" class="section"></div>
-  <div id="flashcards" class="section"></div>
+  <div id="sprint" class="section active"></div>
 
   <!-- Data -->
-  <script src="data/course.js"></script>
   <script src="data/prep.js"></script>
-  <script src="data/resources.js"></script>
 
   <!-- Utils -->
   <script src="js/utils.js"></script>
 
-  <!-- Feature Modules -->
-  <script src="js/home.js"></script>
-  <script src="js/lessons.js"></script>
+  <!-- Audio functions (playScript, readAloud) -->
   <script src="js/intro.js"></script>
-  <script src="js/behavioral.js"></script>
-  <script src="js/youtube.js"></script>
-  <script src="js/strengths.js"></script>
-  <script src="js/glossary.js"></script>
-  <script src="js/flashcard.js"></script>
+
+  <!-- Sprint Cheat Sheet -->
+  <script src="js/sprint.js"></script>
 
   <script>
-    // Initialize all sections
-    renderHome();
-    renderLessons();
-    renderIntro();
-    renderBehavioral();
-    renderYoutube();
-    renderStrengths();
-    renderGlossary();
-    initFlashcards();
+    renderSprint();
   </script>
 </body>
 </html>
