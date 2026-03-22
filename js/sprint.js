@@ -241,8 +241,9 @@ function renderSprint() {
 
   // One-liner highlight
   if (iqaStrategy) {
-    html += '<div style="background:#1e293b;padding:1rem 1.2rem;border-bottom:1px solid #2d3148;font-size:.92rem;color:#fbbf24;line-height:1.7">';
-    html += '<strong>One-liner:</strong> I wouldn\'t ask engineers to change — I\'d start by eliminating their most annoying busywork, prove the value with data, let early adopters influence their peers, and then deepen into core processes on a foundation of trust.';
+    html += '<div style="background:#1e293b;padding:1rem 1.2rem;border-bottom:1px solid #2d3148;font-size:.92rem;color:#fbbf24;line-height:1.7;display:flex;align-items:flex-start;gap:.75rem">';
+    html += '<div style="flex:1"><strong>One-liner:</strong> I wouldn\'t ask engineers to change — I\'d start by eliminating their most annoying busywork, prove the value with data, let early adopters influence their peers, and then deepen into core processes on a foundation of trust.</div>';
+    html += '<button class="btn btn-sm" style="flex-shrink:0;margin-top:.2rem" onclick="playScript(\'sprint-q4-oneliner.mp3\', this)">&#9654;</button>';
     html += '</div>';
   }
 
@@ -269,7 +270,7 @@ function renderSprint() {
   html += '<span class="qa-arrow">&#9654;</span> AirAI 具體案例回答';
   html += '</div>';
   html += '<div class="expandable" id="sprint-q4-full">';
-  html += '<div class="qa-answer-text">' + esc(qaAdopt.answer) + '</div>';
+  html += '<div style="padding:0 1.2rem">' + sprintBlocks(qaAdopt.answer, 'sprint-q4') + '</div>';
   html += '</div>';
 
   html += '</div>';
@@ -289,11 +290,8 @@ function renderSprint() {
   html += '</div>';
 
   html += '<h4 style="color:#9ca3af;margin:.75rem 1.2rem .25rem">English Key Learning</h4>';
-  html += '<div class="qa-answer-text">';
-  html += 'Change management is rarely just about seeing the right answer. The harder part is turning "the change I want to push" into a shared goal that different functions are willing to commit to.\n\n';
-  html += 'If I could not turn my proposed change into a shared goal people were willing to commit to, even a good design would not move.\n\n';
-  html += 'Right solution + wrong approach = wrong solution.';
-  html += '</div>';
+  var q5Text = 'Change management is rarely just about seeing the right answer. The harder part is turning "the change I want to push" into a shared goal that different functions are willing to commit to.\n\nIf I could not turn my proposed change into a shared goal people were willing to commit to, even a good design would not move.\n\nRight solution + wrong approach = wrong solution.';
+  html += '<div style="padding:0 1.2rem">' + sprintBlocks(q5Text, 'sprint-q5') + '</div>';
 
   // Answer strategy
   html += '<h4 style="color:#9ca3af;margin:.75rem 1.2rem .25rem">回答架構</h4>';
